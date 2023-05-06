@@ -30,7 +30,7 @@ const layer = new NpmLayerVersion(this, 'DependencyLayer', {
   layerPath: 'src/deploy/layer',
   layerVersionProps: {
     removalPolicy: UserApiStack.removalPolicy,
-    compatibleArchitectures: [lambda.Architecture.X86_64, lambda.Architecture.ARM_64],
+    compatibleArchitectures: [lambda.Architecture.ARM_64],
     compatibleRuntimes: [lambda.Runtime.NODEJS_16_X]
   }
 });
