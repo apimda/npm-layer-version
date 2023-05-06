@@ -1,0 +1,37 @@
+{
+  "name": "@apimda/npm-layer-version",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "format": "prettier --plugin-search-dir . --write . && prettier-package-json --write",
+    "preinstall": "npx only-allow pnpm",
+    "lint": "prettier --plugin-search-dir . --check . && eslint \".\"",
+    "prepare": "husky install",
+    "repo-clean": "git clean -xdf",
+    "test": "jest"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.78.0",
+    "constructs": "^10.2.17"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.5.0",
+    "@jest/types": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^8.0.3",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.7",
+    "prettier-package-json": "^2.8.0",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "packageManager": "pnpm@8.4.0"
+}
