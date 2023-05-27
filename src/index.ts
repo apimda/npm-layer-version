@@ -1,1 +1,1 @@
-export * from './npm-layer-version';
+export * from './npm-layer-version.js';
