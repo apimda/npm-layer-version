@@ -1,5 +1,7 @@
 # NpmLayerVersion
 
+[![version](https://img.shields.io/npm/v/@apimda/npm-layer-version.svg?style=flat-square)](https://www.npmjs.com/package/@apimda/npm-layer-version)
+
 `NpmLayerVersion` is a CDK construct to create a custom [lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html) from an NPM package.json file.
 
 ## Usage

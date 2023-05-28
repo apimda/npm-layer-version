@@ -1,8 +1,8 @@
 import { Architecture, Code, LayerVersion, LayerVersionProps } from 'aws-cdk-lib/aws-lambda';
-import { execSync } from 'child_process';
 import { Construct } from 'constructs';
-import * as fs from 'fs';
-import path from 'path';
+import { execSync } from 'node:child_process';
+import * as fs from 'node:fs';
+import path from 'node:path';
 
 /**
  * Properties for the NpmLayerVersion construct.

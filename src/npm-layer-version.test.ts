@@ -1,9 +1,9 @@
-import { describe, expect, test } from '@jest/globals';
 import * as cdk from 'aws-cdk-lib';
 import { RemovalPolicy } from 'aws-cdk-lib';
 import { Template } from 'aws-cdk-lib/assertions';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
-import { NpmLayerVersion } from './npm-layer-version';
+import { describe, expect, test } from 'vitest';
+import { NpmLayerVersion } from './npm-layer-version.js';
 
 const testLayerPath = 'test-layer';
 
